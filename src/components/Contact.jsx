@@ -1,47 +1,61 @@
-import { useState, useRef } from 'react';
+import React from 'react';
+import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
+import linkedin from '../assets/logo/linkedin.png';
 
 const Footer = () => {
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('your_service_id', 'your_template_id', e.target, 'your_user_id')
+            .then((result) => {
+                console.log('Email successfully sent!', result.text);
+                // Handle success actions here (e.g., showing a confirmation message)
+            }, (error) => {
+                console.log('Failed to send email.', error.text);
+                // Handle errors here
+            });
+    };
   return (
+    <>
       <footer className="footer">
           <div className="footer-section">
-              <h4>So are you interested in my CV and my personality? Don't wait any longer, contact me.</h4>
-              <a href="/about">ABOUT</a>
-              <a href="/contact">CONTACT</a>
-              <a href="/terms">TERMS</a>
-              <a href="/privacy">PRIVACY</a>
-              <a href="/cookies">COOKIES</a>
-              <a href="/disclaimer">DISCLAIMER</a>
-              <a href="/shop">© Copyright Marie-Ange MBALA. All Rights Reserved</a>
+              <h4>So are you interested in my CV and my personality?</h4>
+              <h4>Don't wait any longer, contact me.</h4>
+              <br /><br />
+              <h4 style={{fontSize: '18px'}}> <strong>SOCIAL MEDIA</strong> </h4>
+              <a href="https://www.linkedin.com/in/marie-ange-mbala-374b48222/" style={{color:'black'}}> <img src={linkedin} alt="linkedin" style={{width:'10%'}}/> Marie-Ange MBALA</a>
+              
               
           </div>
           <div className="footer-section">
-              <h4>MY INFORMATIONS</h4>
+              <h4 style={{fontSize: '18px'}}> <strong>MY INFORMATIONS</strong> </h4>
               <p>Paris, France</p>
               <p>+33 (0) 7 49 85 59 02</p>
               <p>mbalamarieange@gmail.com</p>
+              <p><i style={{fontSize: '14px', color: 'gray'}}>International mobility</i></p>
           </div>
           <div className="footer-section">
-              <h4>CONTACT-ME</h4>
-              <form>
-                  <input type="text" placeholder="Name" />
-                  <br />
-                  <input type="email" placeholder="Email" />
-                  <button type="submit">SUBMIT</button>
-              </form>
+          <h4 style={{fontSize: '18px'}}> <strong>CONTACT-ME</strong> </h4>
+        <form id="contact-form" onSubmit={sendEmail}>
+            <input type="email" name="user_email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" className='buton'>SUBMIT</button>
+        </form>
+
           </div>
           <div className="footer-section">
-              <h4>Social Media</h4>
-              <a href="http://facebook.com"><i className="fa fa-facebook"></i></a>
-              <a href="http://twitter.com"><i className="fa fa-twitter"></i></a>
-              <a href="http://linkedin.com"><i className="fa fa-linkedin"></i></a>
+              
           </div>
+          
       </footer>
+      <p style={{backgroundColor:'#414141'}}>© Copyright Marie-Ange MBALA. All Rights Reserved</p>
+      </>
+      
   );
 };
 

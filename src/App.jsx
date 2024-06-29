@@ -9,6 +9,7 @@ import {
   Projects,
 } from './components';
 import Hobbies from './components/Hobbies';
+import MyTabs from './components/test';
 
 const App = () => {
   return (
@@ -40,7 +41,7 @@ const App = () => {
         <div className="bg-about bg-cover bg-center bg-no-repeat">
           <Hobbies />
         </div>
-   
+   <br /><br /><br /><br /><br />
         <div className="relative z-0">
           <Contact />
         </div>

@@ -44,15 +44,37 @@
 	margin-right: 10px;
 }
 
-/*Competences*/
+/*new projects tab*/
+.tab-titles button {
+	padding: 15px 18px;
+	border: none;
+	background-color: #e1dcdcb0;
+	cursor: pointer;
+	outline: none;
+	border-radius: 5px 5px 0 0;
+	margin-right: 5px;
+	color: #413f37;
+	font-weight: bold;
+	font-size: 16px;
+  }
+  
+  .tab-titles button.active {
+	background-color: #fbba16;
+	border-bottom: 4px solid rgb(23, 22, 22);
+	width: 230px;
+	height: 70px;
+  }
+  
+  
 
 /*Footer*/
 .footer {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background-color: #e6cc8d;
-    color: rgb(12, 11, 11);
+    background-color: #414141;
+    color: rgb(250, 240, 240);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
 }
 
 .footer-section {
@@ -68,16 +90,57 @@
     margin: 5px 0;
 }
 
-input[type="text"], input[type="email"] {
-    margin: 25px 0;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: border-color 0.3s;
 }
+
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #fbba13;
+}
+
+textarea {
+    height: 200px; /* Increased height for message box */
+    width: 500px;
+}
+
+input{
+	width: 500px;
+}
+
+.buton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fbba13;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	font-weight: bold;
+	
+}
+
+.buton:hover {
+    background-color: #ffffff;
+	color: #fbba13;
+}
+
 
 .fa {
     font-size: 24px;

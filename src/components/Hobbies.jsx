@@ -10,7 +10,7 @@ import musique from '../assets/personal/musique.png';
 const HobbiesCard = ({ image, title, date, excerpt, author, commentCount }) => {
     return (
       <div style={{
-        width: '400px',
+        width: '300px',
         borderRadius: '20px',
         overflow: 'hidden',
         boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
@@ -19,11 +19,11 @@ const HobbiesCard = ({ image, title, date, excerpt, author, commentCount }) => {
         display: 'flex',
         flexDirection: 'column',
       }}>
-        <img src={image} alt={title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-        <div style={{ padding: '20px' }}>
+        <img src={image} alt={title} style={{ width: '100%', height: '150px', objectFit: 'cover' }} />
+        <div style={{ padding: '10px' }}>
           <div style={{ fontSize: '14px', color: '#666', marginBottom: '5px' }}>{date.toUpperCase()}</div>
-          <h3 style={{ fontSize: '25px', margin: '0 0 10px 0', color: 'purple', fontWeight: 'bold' }}>{title}</h3>
-          <p style={{ fontSize: '16px', color: '#333', marginBottom: '10px' }}>{excerpt}</p>
+          <h3 style={{ fontSize: '20px', margin: '0 0 10px 0', color: 'purple', fontWeight: 'bold' }}>{title}</h3>
+          <p style={{ fontSize: '15px', color: '#333', marginBottom: '4px' }}>{excerpt}</p>
         </div>
       </div>
     );

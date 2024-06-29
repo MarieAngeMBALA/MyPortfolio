@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
-import { technologies } from '../constants';
 import { styles } from '../styles';
 import { textVariant } from '../utils/motion';
 import image1 from './images/Portfolio/01.jpg';
@@ -29,7 +28,7 @@ const competences = [
   { category: 'COMPLEX ALGORITHMS', description: '>>Understanding data structures(stacks etc..) .................................................................................... >>Solid grounding in advanced mathematics .................................................................................... >>Sorting and graphing algorithms ....................................................................................' },
   { category: 'INTERPERSONAL SKILLS', 
     description: '>>Team Work .................................................................................... >>Time and Conflict management .................................................................................... >>Fluid communication ....................................................................................' },
-  { category: 'PROGRAMMING & CODING', description: '>>Python .................................................................................. >>C++, Java, C#, Kotlin .................................................................................. >>Prolog, SQL ................................................................................. >>Matlab .................................................................................. >>C, Assembly ................................................................................. >>Web Programming ..................................................................................' },
+  { category: 'PROGRAMMING & CODING', description: '>>Python .................................................................................. >>C++, Java, C#, Kotlin, React .................................................................................. >>Prolog, SQL ................................................................................. >>Matlab .................................................................................. >>C, Assembly ................................................................................. >>Web Programming ..................................................................................' },
   { category: 'EMBEDDED SYSTEMS', description: '>>Microcontrollers & Microprocessors ............................................................................... >>RTOS (Real-Time Operating Systems) ............................................................................ >>Reading technical documentation .................................................................................. >>Labview, HAL ..................................................................................... >>communication protocol .................................................................................' },
 ];
 
@@ -50,10 +49,7 @@ const Tech = () => {
     exit: { opacity: 0, scale: 1.05, transition: { duration: 0.3 } }
   };
 
-
-
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(0); // 0 for next, 1 for prev
 
   const handleNext = () => {
     if (index < competences.length - 3) {
@@ -67,8 +63,7 @@ const Tech = () => {
     }
   };
 
-  
-  
+
 
   return (
     <>
