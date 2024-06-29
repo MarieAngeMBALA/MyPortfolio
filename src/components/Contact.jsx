@@ -40,7 +40,7 @@ const Footer = () => {
               <p><i style={{fontSize: '14px', color: 'gray'}}>International mobility</i></p>
           </div>
           <div className="footer-section">
-          <h4 style={{fontSize: '18px'}}> <strong>CONTACT-ME</strong> </h4>
+          <h4 style={{fontSize: '18px'}}> <strong>yyy</strong> </h4>
         <form id="contact-form" onSubmit={sendEmail}>
             <input type="email" name="user_email" placeholder="Your Email" required />
             <textarea name="message" placeholder="Your Message" required></textarea>
