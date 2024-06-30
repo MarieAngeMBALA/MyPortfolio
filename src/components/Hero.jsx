@@ -69,7 +69,7 @@ const Hero = () => {
       </style>
       <section className="relative flex flex-col sm:flex-row w-full h-screen overflow-hidden bg-gray-100">
         <div className="flex-1 sm:w-3/5 flex items-center justify-center bg-gray-100 overflow-hidden p-4">
-          <div className={`${styles.paddingX} mx-auto`}>
+          <div className={`${styles.paddingX} max-w-4xl`}>
             <h1 className={`${styles.heroHeadText} text-eerieBlack font-poppins text-[48px] sm:text-[90px]`}>
               <p style={{ color: 'white', WebkitTextStroke: '1.2px black' }}>Hi There! 👋🏻</p>
               <p>I'm <span className="text-battleGray">Marie-Ange <span className='text-gold-outline'>MBALA</span></span></p>
@@ -77,7 +77,7 @@ const Hero = () => {
             <p className={`${styles.heroSubText} text-eerieBlack text-[25px] sm:text-base`}>
             Real-time systems Software Engineer...
             </p>
-            <p className="text-blue-500 text-[25px]">
+            <p className="text-blue-500 text-[20px] md:text-[25px]">
               <Typewriter
                 options={{
                   strings: [
@@ -102,7 +102,7 @@ const Hero = () => {
           <img
             className="absolute right-0 bottom-0 w-full sm:w-auto sm:h-[97vh] object-cover"
             src={shaq}
-            alt="Shaquille"
+            alt="MarieangeMBALA"
           />
         </div>
         <div className="logo-container">

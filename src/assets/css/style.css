@@ -141,6 +141,16 @@ input{
 	color: #fbba13;
 }
 
+.bg-black:hover{
+	background-color: #efeded;
+	color: #000000;
+	font-weight: bolder;
+	box-shadow: 0 0 5px #000; 
+	border: 2px solid black;
+}
+
+
+
 
 .fa {
     font-size: 24px;
