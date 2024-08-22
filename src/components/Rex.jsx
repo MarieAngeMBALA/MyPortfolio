@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
 import semestre from '../assets/projects/semestre.png';
 
 const Rex = () => {
+    const rating = 3; // Note fixe prédéfinie (par exemple 4 étoiles sur 5)
+    const rating5 = 5;
+    const rating4 = 4;
     const [isVisible, setIsVisible] = useState(false);
 
   // Simuler le changement de visibilité
@@ -58,6 +63,52 @@ const Rex = () => {
                             sans notre intervention à chaque fois.
                         </p>
                         <p>J'ai également contacté une entreprise de certification pour attester de la fiabilité.</p>
+                        <br />
+
+                        <h3><b> Récapitulatif</b></h3>
+                        <table className="recap-table">
+                        <thead>
+                            <tr>
+                                <th>Compétences acquises</th>
+                                <th>Auto-evaluation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mener l'etablissement d'une certification du debut jusqu'à l'obtention</td>
+                                {/* <td>Développement du logiciel industriel en C++ et C#</td> */}
+                                <td>
+                                    <div className="star-rating">
+                                    {[...Array(5)].map((star, index) => (
+                                            <FontAwesomeIcon
+                                                key={index}
+                                                icon={faStar}
+                                                className={index < rating ? "star selected" : "star"}
+                                            />
+                                        ))}
+                                    </div>
+                                    <p>En cours d'assimilation</p>
+                                </td>                              
+                            </tr>
+                            <tr>
+                                <td>Mise en oeuvre et sécurisation d'installateur de logiciel</td>
+                                <td>
+                                    <div className="star-rating">
+                                    {[...Array(5)].map((star, index) => (
+                                            <FontAwesomeIcon
+                                                key={index}
+                                                icon={faStar}
+                                                className={index < rating5 ? "star selected" : "star"}
+                                            />
+                                        ))}
+                                    </div>
+                                    <p>Maitrise totale</p>
+                                </td>
+                                
+                            </tr>
+                            {/* Ajoutez d'autres lignes au besoin */}
+                        </tbody>
+                        </table>
 
                         <br />
                             <h3 className='titre3'>Module 2 : Sécurité du système d'information</h3>
@@ -73,6 +124,52 @@ const Rex = () => {
                             et nous travaillons avec elle pour assurer la sécurité avec un audit à chaque étape.
                         </p>
                         <p><strong>Pratiques :</strong> Test d'infiltration (Pentesting)</p>
+                        <br />
+
+                        <h3><b> Récapitulatif</b></h3>
+                        <table className="recap-table">
+                        <thead>
+                            <tr>
+                                <th>Compétences acquises</th>
+                                <th>Auto-evaluation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Communication et Collaboration avec des entités externes</td>
+                                {/* <td>Développement du logiciel industriel en C++ et C#</td> */}
+                                <td>
+                                    <div className="star-rating">
+                                    {[...Array(5)].map((star, index) => (
+                                            <FontAwesomeIcon
+                                                key={index}
+                                                icon={faStar}
+                                                className={index < rating4 ? "star selected" : "star"}
+                                            />
+                                        ))}
+                                    </div>
+                                    <p>Maitrisé</p>
+                                </td>                              
+                            </tr>
+                            <tr>
+                                <td>Maitrise des pratiques de sécurisation de logiciel</td>
+                                <td>
+                                    <div className="star-rating">
+                                    {[...Array(5)].map((star, index) => (
+                                            <FontAwesomeIcon
+                                                key={index}
+                                                icon={faStar}
+                                                className={index < rating5 ? "star selected" : "star"}
+                                            />
+                                        ))}
+                                    </div>
+                                    <p>Maitrise totale</p>
+                                </td>
+                                
+                            </tr>
+                            {/* Ajoutez d'autres lignes au besoin */}
+                        </tbody>
+                        </table>
 
                         <br />
                             <h3 className='titre3'>Module 3 : Technique</h3>
@@ -82,6 +179,34 @@ const Rex = () => {
                             <li><b class="fas fa-user"></b>Gestion de licences avec l'outil FLEXLM</li>
                             <li><b class="fas fa-user"></b> Application des concepts vu en IHM à l'école</li>
                         </ul>
+                        <br />
+                        <h3><b> Récapitulatif</b></h3>
+                        <table className="recap-table">
+                        <thead>
+                            <tr>
+                                <th>Compétences acquises</th>
+                                <th>Auto-evaluation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Création et maintenance des licences - Design interface</td>
+                                {/* <td>Développement du logiciel industriel en C++ et C#</td> */}
+                                <td>
+                                    <div className="star-rating">
+                                    {[...Array(5)].map((star, index) => (
+                                            <FontAwesomeIcon
+                                                key={index}
+                                                icon={faStar}
+                                                className={index < rating5 ? "star selected" : "star"}
+                                            />
+                                        ))}
+                                    </div>
+                                    <p>Maitrise totale</p>
+                                </td>                              
+                            </tr>
+                        </tbody>
+                        </table>
                     </motion.div>
         </div>
     </> 

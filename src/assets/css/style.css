@@ -150,6 +150,38 @@ input{
 }
 
 
+/* Table */
+.recap-table {
+    width: 100%;
+    border-collapse: collapse; /* Fusionne les bordures des cellules adjacentes */
+    margin-top: 20px;
+}
+
+.recap-table th, .recap-table td {
+    border: 1px solid #ddd; /* Applique une bordure autour de chaque cellule */
+    padding: 8px; /* Espace à l'intérieur des cellules */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.recap-table th {
+    background-color: #f2f2f2; /* Ajoute une couleur de fond aux en-têtes */
+    font-weight: bold; /* Met en gras le texte des en-têtes */
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    font-size: 1rem;
+    color: #ccc; /* Couleur des étoiles non sélectionnées */
+}
+
+.star.selected {
+    color: #ffc107; /* Couleur des étoiles sélectionnées (jaune par exemple) */
+}
+
 
 
 .fa {
