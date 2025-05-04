@@ -41,7 +41,7 @@ const Competitions = () => {
                         transition={{ duration: 0.5, ease: "easeIn" }}
                         src={mans} // Remplacez par le chemin de votre image
                         alt="Web Design"
-                        className="image-block"/>  
+                        className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"/>  
         </div>
                                 
         <div class="container">  
@@ -72,7 +72,7 @@ const Competitions = () => {
                         transition={{ duration: 0.5, ease: "easeIn" }}
                         src={coupe} // Remplacez par le chemin de votre image
                         alt="Web Design"
-                        className="image-block"/>  
+                        className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"/>  
         </div>
     </> 
   );

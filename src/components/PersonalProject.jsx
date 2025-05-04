@@ -58,7 +58,7 @@ const PersonalProject = () => {
                     transition={{ duration: 0.5, ease: "easeIn" }}
                     src={othello} 
                     alt="Web Design"
-                    className="image-block"
+                    className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"
                     />
                     <motion.div 
                     className="text-block"

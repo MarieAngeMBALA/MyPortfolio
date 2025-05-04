@@ -46,7 +46,7 @@ const SchoolProject = () => {
                         transition={{ duration: 0.5, ease: "easeIn" }}
                         src={mobile} // Remplacez par le chemin de votre image
                         alt="Web Design"
-                        className="image-block"/>  
+                        className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"/>  
         </div>
 
         <div class="container">  
@@ -77,7 +77,7 @@ const SchoolProject = () => {
                         transition={{ duration: 0.5, ease: "easeIn" }}
                         src={micro} // Remplacez par le chemin de votre image
                         alt="Web Design"
-                        className="image-block"/>  
+                        className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"/>  
         </div>
 
         <div class="container">  
@@ -108,7 +108,7 @@ const SchoolProject = () => {
                         transition={{ duration: 0.5, ease: "easeIn" }}
                         src={lid} // Remplacez par le chemin de votre image
                         alt="Web Design"
-                        className="image-block"/>  
+                        className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"/>  
         </div>
 
         <div class="container">  
@@ -139,7 +139,7 @@ const SchoolProject = () => {
                         transition={{ duration: 0.5, ease: "easeIn" }}
                         src={code} // Remplacez par le chemin de votre image
                         alt="Web Design"
-                        className="image-block"/>  
+                        className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"/>  
         </div>
 
         <div class="container">  
@@ -171,7 +171,7 @@ const SchoolProject = () => {
                         transition={{ duration: 0.5, ease: "easeIn" }}
                         src={java} // Remplacez par le chemin de votre image
                         alt="Web Design"
-                        className="image-block"/>  
+                        className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"/>  
         </div>
 
         <div class="container">  
@@ -202,7 +202,7 @@ const SchoolProject = () => {
                         transition={{ duration: 0.5, ease: "easeIn" }}
                         src={poubelle} // Remplacez par le chemin de votre image
                         alt="Web Design"
-                        className="image-block"/>  
+                        className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"/>  
         </div>
     </> 
   );

@@ -18,16 +18,16 @@ const WorkExperiences = () => {
   return (
     <>
     <div className="container">
-      <motion.img
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.4 }}
-        transition={{ duration: 0.5, ease: "easeIn" }}
-        src={devops}
-        alt="Web Design"
-        className="image-block"
-      />
+    <motion.img
+    initial={{ opacity: 0, y: 50 }}
+    animate={isVisible ? { opacity: 1 } : {}}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.4 }}
+    transition={{ duration: 0.5, ease: "easeIn" }}
+    src={devops}
+    alt="Web Design"
+    className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"
+  />
       <motion.div 
         className="text-block"
         initial={{ opacity: 0, y: 50 }}
@@ -86,7 +86,7 @@ const WorkExperiences = () => {
                   transition={{ duration: 0.5, ease: "easeIn" }}
                   src={belgium}// Remplacez par le chemin de votre image
                   alt="Web Design"
-                  className="image-block"/>  
+                  className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"/>  
     </div>
 
     <div class="container" >
@@ -98,7 +98,7 @@ const WorkExperiences = () => {
                   transition={{ duration: 0.5, ease: "easeIn" }}
                   src={devindus} // Remplacez par le chemin de votre image
                   alt="Web Design"
-                  className="image-block"/>  
+                  className="w-[90%] sm:w-[50%] max-h-[200px] sm:max-h-none object-contain"/>  
                 <motion.div
                   className="text-block"
                   initial={{ opacity: 0, y: 50 }}  // Commence avec l'opacité à 0 et légèrement décalé sur l'axe Y

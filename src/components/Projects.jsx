@@ -148,8 +148,7 @@ const Projects = () => {
     'WORK EXPERIENCES': <WorkExperiences />,
     'SCHOOL PROJECTS': <SchoolProject />,
     'PERSONAL PROJECTS': <PersonalProject />,
-    'COMPETITIONS': <Competitions />,
-    'MY INTERNSHIP REX' : <Rex />
+    'COMPETITIONS': <Competitions />
   };
 
 
